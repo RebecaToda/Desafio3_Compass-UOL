@@ -16,6 +16,7 @@ const InputNews = styled.input`
   outline: none;
   border-bottom: 1px solid black;
   width: 200px;
+  margin-right: 11px;
 `;
 
 const ButtonSub = styled.button`
@@ -29,10 +30,11 @@ const ButtonSub = styled.button`
   border-bottom: 1px solid black;
   background-color: transparent;
   cursor: pointer;
+  margin-bottom: 40px;
 `;
 
 const LineF = styled.div`
-  width: 90%;
+  width: 100%;
   height: 1px;
   background-color: #d9d9d9;
 `;
