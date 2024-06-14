@@ -10,11 +10,23 @@ interface Props {
 
 const Poppins = styled.p<Props>`
   font-family: "Poppins", sans-serif;
-  font-size: ${({ fontSize }) => fontSize || "16px"};
-  font-weight: ${({ fontWeight }) => fontWeight || "400"};
-  color: ${({ color }) => color || "#000000"};
-  padding-bottom: ${({ paddingBottom }) => paddingBottom || "0"};
-  padding-top: ${({ paddingTop }) => paddingTop || "0"};
+  font-size: ${({ fontSize }: Props) => fontSize || "16px"};
+  font-weight: ${({ fontWeight }: Props) => fontWeight || "400"};
+  color: ${({ color }: Props) => color || "#000000"};
+  padding-bottom: ${({ paddingBottom }: Props) => paddingBottom || "0"};
+  padding-top: ${({ paddingTop }: Props) => paddingTop || "0"};
 `;
 
-export default Poppins;
+const Montserrat = styled.p`
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #000000;
+`;
+
+const Fonts = {
+  Poppins,
+  Montserrat,
+};
+
+export default Fonts;

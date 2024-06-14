@@ -2,7 +2,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import { createBrowserRouter } from "react-router-dom";
 import Shop from "../pages/Shop";
-import Footer from "../Components/Footer/Footer";
+import Header from "../Components/Header/Header";
 
 export const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ export const router = createBrowserRouter([
         element: <Shop />,
       },
       {
-        path: "/footer",
-        element: <Footer />,
+        path: "/header",
+        element: <Header />,
       },
     ],
   },

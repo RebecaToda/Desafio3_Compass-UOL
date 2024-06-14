@@ -39,11 +39,35 @@ const LineF = styled.div`
   background-color: #d9d9d9;
 `;
 
+const PreFooter = styled.div`
+  background-color: #faf3ea;
+  padding: 100px 55px;
+  margin-bottom: 8px;
+  display: flex;
+`;
+
+interface Props {
+  MarginLeft?: string;
+}
+
+const Icons = styled.img<Props>`
+  margin-right: 10px;
+  margin-left: ${({ MarginLeft }: Props) => MarginLeft || "4%"};
+  width: 60px;
+  height: 60px;
+
+  @media only screen and (max-width: 769px) {
+    margin-left: 0%;
+  }
+`;
+
 const Components = {
   LineF,
   InputNews,
   ButtonSub,
   LineTopF,
+  PreFooter,
+  Icons,
 };
 
 export default Components;
