@@ -9,7 +9,14 @@ interface Props {
 const HeaderWrapper = styled.header`
   padding: 30px 70px;
   max-height: 100px;
-  display: flex;
+  display: ${(({ menuActive }: Props) =>
+    menuActive ? "grid" : "flex") as unknown as string};
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo icons"
+    "links links";
   justify-content: space-between;
 
   @media only screen and (max-width: 769px) {
@@ -19,6 +26,7 @@ const HeaderWrapper = styled.header`
 
 const Logo = styled.div`
   display: inline-flex;
+  grid-area: logo;
 `;
 
 const Title = styled.p`
@@ -35,7 +43,8 @@ const Title = styled.p`
 `;
 const Links = styled.ul<Props>`
   align-items: center;
-  display: flex;
+  display: ${(({ menuActive }: Props) =>
+    menuActive ? "grid" : "flex") as unknown as string};
   list-style: none;
   gap: 75px;
   a {
@@ -46,8 +55,8 @@ const Links = styled.ul<Props>`
   }
   @media only screen and (max-width: 769px) {
     & {
-      display: ${({ menuActive }: Props) => (menuActive ? "none" : "flex")};
-      justify-self: flex-end;
+      display: ${(({ menuActive }: Props) =>
+        menuActive ? "none" : "flex") as unknown as string};
       flex-direction: column;
       align-items: center;
       width: 100%;
