@@ -10,6 +10,7 @@
   flex-direction: row;
   gap: 32px;
   grid-area: icons;
+  justify-self: flex-end;
 }
 
 .font:hover {

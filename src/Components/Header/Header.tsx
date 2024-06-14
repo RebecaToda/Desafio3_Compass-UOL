@@ -3,14 +3,14 @@ import Fonts from "../../fonts/fonts.ts";
 import styles from "./Header.module.css";
 import Components from "./style.ts";
 
-const { HeaderWrapper, Logo, Icons, Title, Links } = Components;
+const { HeaderWrapper, Logo, Icon, Title, Links } = Components;
 const { Poppins } = Fonts;
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper menuActive={menu}>
       <a href="/home">
         <Logo>
           <img
@@ -21,8 +21,7 @@ const Header = () => {
           <Title>Funiro</Title>
         </Logo>
       </a>
-      <p>{menu ? "true" : "false"}</p>
-      <Links className={styles.ul}>
+      <Links className={styles.ul} menuActive={menu}>
         <li className={styles.li}>
           <a href="/home" className={styles.links}>
             <Poppins
@@ -70,13 +69,13 @@ const Header = () => {
       </Links>
       <div className={styles.icons}>
         <a href="" target="_blank">
-          <Icons
+          <Icon menuActive={menu}
             src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/login_icon.svg"
             alt="Login Icon"
           />
         </a>
         <a href="" target="_blank">
-          <Icons
+          <Icon menuActive={menu}
             src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/cart_icon.svg"
             alt="Cart Icon"
             width={"28px"}
