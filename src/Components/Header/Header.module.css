@@ -4,22 +4,12 @@
   flex-direction: row;
 }
 
-.ul {
-  align-items: center;
-  display: flex;
-  list-style: none;
-  gap: 75px;
-}
-
 .icons {
   align-items: center;
   display: flex;
   flex-direction: row;
   gap: 32px;
-}
-
-.li {
-  cursor: pointer;
+  grid-area: icons;
 }
 
 .font:hover {
@@ -32,8 +22,9 @@
 }
 
 @media only screen and (max-width: 769px) {
-  .ul {
-    display: none;
+  .logo {
+    width: 40%;
+    height: auto;
   }
 
   .menu {
@@ -47,5 +38,10 @@
   .menu:hover {
     filter: invert(72%) sepia(15%) saturate(11%) hue-rotate(21deg)
       brightness(85%) contrast(88%);
+  }
+}
+@media only screen and (max-width: 426px) {
+  .icons {
+    gap: 16px;
   }
 }

@@ -3,24 +3,28 @@ import Fonts from "../../fonts/fonts.ts";
 import styles from "./Header.module.css";
 import Components from "./style.ts";
 
-const { HeaderWrapper, Logo, Icons } = Components;
-const { Poppins, Montserrat } = Fonts;
+const { HeaderWrapper, Logo, Icons, Title, Links } = Components;
+const { Poppins } = Fonts;
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <>
-      <HeaderWrapper>
+    <HeaderWrapper>
+      <a href="/home">
         <Logo>
           <img
             src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/logo.svg"
             alt="Funiro Logo"
+            className={styles.logo}
           />
-          <Montserrat>Funiro</Montserrat>
+          <Title>Funiro</Title>
         </Logo>
-        <ul className={styles.ul}>
-          <li className={styles.li}>
+      </a>
+      <p>{menu ? "true" : "false"}</p>
+      <Links className={styles.ul}>
+        <li className={styles.li}>
+          <a href="/home" className={styles.links}>
             <Poppins
               fontWeight={"500"}
               fontSize={"16px"}
@@ -28,8 +32,10 @@ const Header = () => {
             >
               Home
             </Poppins>
-          </li>
-          <li className={styles.li}>
+          </a>
+        </li>
+        <li className={styles.li}>
+          <a href="/shop" className={styles.links}>
             <Poppins
               fontWeight={"500"}
               fontSize={"16px"}
@@ -37,8 +43,10 @@ const Header = () => {
             >
               Shop
             </Poppins>
-          </li>
-          <li className={styles.li}>
+          </a>
+        </li>
+        <li className={styles.li}>
+          <a href="/" className={styles.links}>
             <Poppins
               fontWeight={"500"}
               fontSize={"16px"}
@@ -46,8 +54,10 @@ const Header = () => {
             >
               About
             </Poppins>
-          </li>
-          <li className={styles.li}>
+          </a>
+        </li>
+        <li className={styles.li}>
+          <a href="/contact" className={styles.links}>
             <Poppins
               fontWeight={"500"}
               fontSize={"16px"}
@@ -55,34 +65,32 @@ const Header = () => {
             >
               Contact
             </Poppins>
-          </li>
-        </ul>
-        <div className={styles.icons}>
-          <a href="" target="_blank">
-            <Icons
-              src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/login_icon.svg"
-              alt="Login Icon"
-              className={styles.img}
-            />
           </a>
-          <a href="" target="_blank">
-            <Icons
-              src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/cart_icon.svg"
-              alt="Cart Icon"
-              weight={"28px"}
-              height={"28px"}
-              className={styles.img}
-            />
-          </a>
-          <button className={styles.menu} onClick={() => setMenu(!menu)}>
-            <img
-              src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/burger-menu.svg"
-              alt="Menu Icon"
-            />
-          </button>
-        </div>
-      </HeaderWrapper>
-    </>
+        </li>
+      </Links>
+      <div className={styles.icons}>
+        <a href="" target="_blank">
+          <Icons
+            src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/login_icon.svg"
+            alt="Login Icon"
+          />
+        </a>
+        <a href="" target="_blank">
+          <Icons
+            src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/cart_icon.svg"
+            alt="Cart Icon"
+            width={"28px"}
+            height={"28px"}
+          />
+        </a>
+        <button className={styles.menu} onClick={() => setMenu(!menu)}>
+          <img
+            src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/burger-menu.svg"
+            alt="Menu Icon"
+          />
+        </button>
+      </div>
+    </HeaderWrapper>
   );
 };
 
