@@ -22,6 +22,7 @@ const Montserrat = styled.p`
   font-size: 34px;
   font-weight: 700;
   color: #000000;
+  padding-left: 5px;
 `;
 
 const Fonts = {
