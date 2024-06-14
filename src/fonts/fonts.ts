@@ -17,16 +17,8 @@ const Poppins = styled.p<Props>`
   padding-top: ${({ paddingTop }: Props) => paddingTop || "0"};
 `;
 
-const Montserrat = styled.p`
-  font-family: "Montserrat", sans-serif;
-  font-size: 34px;
-  font-weight: 700;
-  color: #000000;
-`;
-
 const Fonts = {
   Poppins,
-  Montserrat,
 };
 
 export default Fonts;
