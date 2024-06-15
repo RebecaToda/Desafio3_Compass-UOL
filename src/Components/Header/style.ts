@@ -3,7 +3,7 @@ import styled from "styled-components";
 interface Props {
   width?: string;
   height?: string;
-  menuActive: boolean;
+  menuActive?: boolean;
 }
 
 const HeaderWrapper = styled.header<Props>`
@@ -15,11 +15,11 @@ const HeaderWrapper = styled.header<Props>`
   @media only screen and (max-width: 769px) {
     padding: 30px 20px;
     display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr;
-  grid-template-areas:
-    "logo icons"
-    "links links";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+      "logo icons"
+      "links links";
   }
 `;
 
@@ -55,23 +55,20 @@ const Links = styled.ul<Props>`
   }
   @media only screen and (max-width: 769px) {
     & {
-      display: flex;
-      max-height: ${(({ menuActive }: Props) =>
-    menuActive ? "500px" : "0px")};
-      opacity: ${(({ menuActive }: Props) =>
-    menuActive ? "1" : "0")};
+      max-height: ${({ menuActive }: Props) => (menuActive ? "500px" : "0px")};
+      visibility: ${({ menuActive }: Props) =>
+        menuActive ? "visible" : "hidden"};
+      opacity: ${({ menuActive }: Props) => (menuActive ? "1" : "0")};
       transition: 250ms ease-in-out;
       align-items: center;
-      justify-content: space-evenly; 
-      li:first-child{
-        margin-top: 1rem;
-      }
+      justify-content: space-evenly;
+      padding-top: ${({ menuActive }: Props) => (menuActive ? "1rem" : "0")};
     }
   }
   @media only screen and (max-width: 426px) {
     & {
       flex-direction: column;
-      gap: .5rem;
+      gap: 0.5rem;
       align-items: flex-start;
     }
   }

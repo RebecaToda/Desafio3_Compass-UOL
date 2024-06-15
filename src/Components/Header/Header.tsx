@@ -69,13 +69,13 @@ const Header = () => {
       </Links>
       <div className={styles.icons}>
         <a href="" target="_blank">
-          <Icon menuActive={menu}
+          <Icon
             src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/login_icon.svg"
             alt="Login Icon"
           />
         </a>
         <a href="" target="_blank">
-          <Icon menuActive={menu}
+          <Icon
             src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/cart_icon.svg"
             alt="Cart Icon"
             width={"28px"}
