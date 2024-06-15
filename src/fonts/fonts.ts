@@ -6,6 +6,7 @@ interface Props {
   color?: string;
   paddingBottom?: string;
   paddingTop?: string;
+  textDecoration?: string;
 }
 
 const Poppins = styled.p<Props>`
@@ -15,6 +16,7 @@ const Poppins = styled.p<Props>`
   color: ${({ color }: Props) => color || "#000000"};
   padding-bottom: ${({ paddingBottom }: Props) => paddingBottom || "0"};
   padding-top: ${({ paddingTop }: Props) => paddingTop || "0"};
+  text-decoration: ${({ textDecoration }: Props) => textDecoration || "none"};
 `;
 
 const Fonts = {
