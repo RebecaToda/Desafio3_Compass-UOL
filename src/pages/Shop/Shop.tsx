@@ -1,17 +1,24 @@
 import Footer from "../../Components/Footer/Footer";
-import FurnitureCard from "../../Components/FurnitureCard/FurnitureCard";
+import { FurnitureGalery } from "../../Components/FurnitureGalery/FurnitureGalery";
 import Header from "../../Components/Header/Header";
 import ShopBackground from "../../Components/ShopBackground/ShopBackground";
 import { IFurnitureCard } from "../../Interfaces/IFurnitureCard";
 import ProductsMock from "../../Mock/Products.mock.json";
-const mock:IFurnitureCard[] = ProductsMock.products;
+const mock: IFurnitureCard[] = ProductsMock.products;
 
 export const Shop = () => {
   return (
     <div>
       <Header />
       <ShopBackground title="Shop" />
-      <FurnitureCard data={mock[0]}></FurnitureCard>
+      <div style={{ paddingBottom: "100px" }}>
+        <FurnitureGalery
+          showFilters
+          showPagination
+          initialCardLimit={16}
+          data={mock}
+        ></FurnitureGalery>
+      </div>
       <Footer showPreFooter />;
     </div>
   );

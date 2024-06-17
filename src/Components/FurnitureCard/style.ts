@@ -4,14 +4,14 @@ interface Props {
   isNew?: boolean;
 }
 
-const Card = styled.div`
+const Card = styled.div<{ styleType: "vertical" | "horizontal" }>`
   width: fit-content;
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color:#F4F5F7;
+  background-color: #f4f5f7;
 
-  &:hover .hoverElements{
+  &:hover .hoverElements {
     visibility: visible;
     opacity: 1;
   }
@@ -27,13 +27,13 @@ const Bubble = styled.div<Props>`
   top: 1.5rem;
   width: 48px;
   aspect-ratio: 1/1;
-  background-color: ${({ isNew }: Props) => (isNew ? '#2EC1AC' : '#E97171')};
+  background-color: ${({ isNew }: Props) => (isNew ? "#2EC1AC" : "#E97171")};
 `;
 
 const Info = styled.div`
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 1rem;
   padding-bottom: 2rem;
 `;
@@ -55,13 +55,13 @@ const HoverElements = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(58, 58, 58,.72 );
+  background: rgba(58, 58, 58, 0.72);
   visibility: hidden;
   opacity: 0;
 `;
 
 const Button = styled.button`
-  padding:.75rem 3.5rem;
+  padding: 0.75rem 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
