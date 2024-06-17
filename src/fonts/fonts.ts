@@ -7,6 +7,7 @@ interface Props {
   paddingBottom?: string;
   paddingTop?: string;
   textDecoration?: string;
+  letterSpacing?: string;
 }
 
 const Poppins = styled.p<Props>`
@@ -17,6 +18,7 @@ const Poppins = styled.p<Props>`
   padding-bottom: ${({ paddingBottom }: Props) => paddingBottom || "0"};
   padding-top: ${({ paddingTop }: Props) => paddingTop || "0"};
   text-decoration: ${({ textDecoration }: Props) => textDecoration || "none"};
+  letter-spacing: ${({ letterSpacing }: Props) => letterSpacing || "normal"};
 `;
 
 const Fonts = {

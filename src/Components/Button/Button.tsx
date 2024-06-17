@@ -9,12 +9,14 @@ interface Props {
   content: string;
   bordered?: boolean;
   borderRadius?: number;
+  padding?: string;
 }
 
-const Button = ({ color, content, bordered, borderRadius }: Props) => {
+const Button = ({ color, content, bordered, borderRadius, padding }: Props) => {
   return (
     <ButtonStyled
       borderRadius={borderRadius ?? 0}
+      padding={padding ?? "0.75rem 2rem"}
       color={color}
       bordered={bordered ?? false}
     >

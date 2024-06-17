@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IFurnitureCard } from "../../Interfaces/IFurnitureCard";
 import FurnitureCard from "../FurnitureCard/FurnitureCard";
 import Fonts from "../../fonts/fonts.ts";
@@ -32,7 +32,7 @@ export const FurnitureGalery = ({
   const windowSize = useWindowDimensions();
   const [cardLimit, setCardLimit] = useState<number>(initialCardLimit);
   const [pagination, setPagination] = useState<number>(1);
-  const [sortBy, setSortBy] = useState<"default" | "">("default");
+  // const [sortBy, setSortBy] = useState<"default" | "">("default");
   const [cardStyleType, setCardStyleType] = useState<"vertical" | "horizontal">(
     "vertical"
   );
@@ -77,7 +77,7 @@ export const FurnitureGalery = ({
           </CardStyleConfig>
           <DescriptionFilter>
             <div>
-              <Poppins>Show</Poppins>
+              <Poppins fontSize={"20px"}>Show</Poppins>
               <input
                 type="number"
                 min={2}
@@ -105,7 +105,7 @@ export const FurnitureGalery = ({
               />
             </div>
             <div>
-              <Poppins>Sort By</Poppins>
+              <Poppins fontSize={"20px"}>Sort By</Poppins>
               <select>
                 <option value="Default">Default</option>
               </select>
@@ -135,7 +135,7 @@ export const FurnitureGalery = ({
           {pagination > 1 ? (
             <>
               <Item onClick={() => changePagination(pagination - 1)}>
-                <Poppins>previous</Poppins>
+                <Poppins>Previous</Poppins>
               </Item>
               {windowSize.width > 500 ? (
                 <Item onClick={() => changePagination(pagination - 1)}>
@@ -162,7 +162,7 @@ export const FurnitureGalery = ({
                 ""
               )}
               <Item onClick={() => changePagination(pagination + 1)}>
-                <Poppins>next</Poppins>
+                <Poppins>Next</Poppins>
               </Item>
             </>
           ) : (

@@ -55,15 +55,33 @@ const DescriptionFilter = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+
   div {
     gap: 1rem;
     display: flex;
+    align-items: center;
   }
+
+  input {
+    width: 55px;
+    height: 55px;
+    color: #9f9f9f;
+    text-align: center;
+  }
+
   input,
   select {
     -webkit-appearance: none;
-    width: fit-content;
+    border: none;
   }
+
+  select {
+    height: 55px;
+    width: 190px;
+    color: #9f9f9f;
+    padding-left: 30px;
+  }
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -81,6 +99,7 @@ const DescriptionFilter = styled.div`
 const Galery = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
   gap: 2.5rem 2rem;
 `;
@@ -93,10 +112,11 @@ const Item = styled.div`
   display: grid;
   place-items: center;
   min-width: 60px;
-  aspect-ratio: 1/1;
+  padding: 17px 20px;
   border-radius: 10px;
   background-color: #f9f1e7;
   cursor: pointer;
+
   &.actualPos {
     background-color: #b88e2f;
   }
