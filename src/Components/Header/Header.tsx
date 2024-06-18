@@ -68,7 +68,7 @@ const Header = () => {
         </li>
       </Links>
       <div className={styles.icons}>
-        <a href="">
+        <a href="/login">
           <Icon
             src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Header/login_icon.svg"
             alt="Login Icon"
