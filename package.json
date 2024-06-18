@@ -14,9 +14,14 @@
     "@types/google-fonts": "^1.0.2",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
+    "firebase": "^10.12.2",
+    "firebaseui": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-input-mask": "^2.0.4",
     "react-router-dom": "^6.23.1",
+    "react-splide-ts": "^0.7.14",
+    "redux-devtools-extension": "^2.13.9",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

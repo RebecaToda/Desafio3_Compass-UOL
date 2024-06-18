@@ -70,6 +70,11 @@
 
   .links {
     padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .links img {
+    width: 100%;
   }
 }
 

@@ -8,13 +8,14 @@ const { Poppins } = Fonts;
 
 interface Props {
   data: IFurnitureCard;
+  styleType?: "vertical" | "horizontal";
 }
 
-export const FurnitureCard = (props: Props) => {
-  const { title, description, price, discount, img, isNew } = props.data;
+export const FurnitureCard = ({ data, styleType = "vertical" }: Props) => {
+  const { title, description, price, discount, img, isNew } = data;
 
   return (
-    <Card>
+    <Card styleType={styleType}>
       {discount > 0 || isNew ? (
         <Bubble isNew={isNew}>
           <Poppins color={"white"}>{isNew ? "New" : `-${discount}%`}</Poppins>
@@ -48,20 +49,37 @@ export const FurnitureCard = (props: Props) => {
       </Info>
       <HoverElements className={"hoverElements"}>
         <Button>
-          <Poppins fontWeight={"600"} color={"#B88E2F"}>Add to cart</Poppins>
+          <Poppins fontWeight={"600"} color={"#B88E2F"}>
+            Add to cart
+          </Poppins>
         </Button>
         <Options>
           <Item>
-            <img src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Hover/share.svg" alt="Share" />
-            <Poppins fontWeight={"600"} color={"white"}><a>Share</a></Poppins>
+            <img
+              src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Hover/share.svg"
+              alt="Share"
+            />
+            <Poppins fontWeight={"600"} color={"white"}>
+              <a>Share</a>
+            </Poppins>
           </Item>
           <Item>
-            <img src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Hover/compare.svg" alt="Compare" />
-            <Poppins fontWeight={"600"} color={"white"}><a>Compare</a></Poppins>
+            <img
+              src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Hover/compare.svg"
+              alt="Compare"
+            />
+            <Poppins fontWeight={"600"} color={"white"}>
+              <a>Compare</a>
+            </Poppins>
           </Item>
           <Item>
-            <img src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Hover/like.svg" alt="Like" />
-            <Poppins fontWeight={"600"} color={"white"}><a>Like</a></Poppins>
+            <img
+              src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Hover/like.svg"
+              alt="Like"
+            />
+            <Poppins fontWeight={"600"} color={"white"}>
+              <a>Like</a>
+            </Poppins>
           </Item>
         </Options>
       </HoverElements>
