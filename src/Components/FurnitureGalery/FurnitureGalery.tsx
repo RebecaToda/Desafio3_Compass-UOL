@@ -150,7 +150,7 @@ export const FurnitureGalery = ({
           )}
 
           <Item className="actualPos">
-            <Poppins>{pagination}</Poppins>
+            <Poppins color={"white"}>{pagination}</Poppins>
           </Item>
           {pagination * cardLimit < data.length ? (
             <>

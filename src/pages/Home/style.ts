@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface Props {
-  position: "before" | "this" | "after";
+  isFocus: boolean;
 }
 
 const DiscoverSection = styled.section`
@@ -92,28 +92,17 @@ const SliderSection = styled.section`
   }
 `;
 
-const SliderWrapper = styled.div`
-  display: flex;
-`;
-const Slider = styled.div`
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-`;
 const ImageWrapper = styled.div<Props>`
-  width: ${({ position }: Props) => (position == "this" ? "300px" : "250px")};
+  width: ${({ isFocus }: Props) => (isFocus ? "300px" : "250px")};
   height: fit-content;
   transform-origin: left top;
-  visibility: ${({ position }: Props) =>
-    position == "before" ? "hidden" : "visible"};
   position: relative;
   img {
     width: 100%;
   }
 `;
 const ImageContent = styled.div<Props>`
-  visibility: ${({ position }: Props) =>
-    position != "this" ? "hidden" : "visible"};
+  visibility: ${({ isFocus }: Props) => (isFocus ? "visible" : "hidden")};
   position: absolute;
   left: 24px;
   bottom: 24px;
@@ -135,16 +124,17 @@ const ImageText = styled.div`
   background-color: rgba(255, 255, 255, 0.72);
   padding: 32px;
 `;
-const Dots = styled.div`
-  display: flex;
-  gap: 20px;
-`;
-const Dot = styled.div`
-  background-color: red;
-  width: 11px;
-  height: 11px;
-  padding: 8px;
-`;
+
+// const Dots = styled.div`
+//   display: flex;
+//   gap: 20px;
+// `;
+// const Dot = styled.div`
+//   background-color: red;
+//   width: 11px;
+//   height: 11px;
+//   padding: 8px;
+// `;
 
 const Share = styled.div`
   display: flex;
@@ -165,14 +155,14 @@ const Components = {
   ItemsSection,
   RangeSection,
   SliderSection,
-  SliderWrapper,
-  Slider,
+  // SliderWrapper,
+  // Slider,
   ImageWrapper,
   Image,
   ImageContent,
   ImageText,
-  Dots,
-  Dot,
+  // Dots,
+  // Dot,
   Share,
 };
 

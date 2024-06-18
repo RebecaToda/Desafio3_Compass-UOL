@@ -5,3 +5,35 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+
+.HomeSplide .splide__pagination {
+  left: 45% !important;
+  bottom: 2rem !important;
+  right: inherit !important;
+  width: fit-content;
+  gap: 8px;
+}
+.HomeSplide .splide__pagination li {
+  display: flex !important;
+}
+
+.HomeSplide .splide__pagination__page.is-active {
+  background-color: #b88e2f !important;
+  border: 1px solid #b88e2f !important;
+  position: relative;
+  width: 6px !important;
+  height: 6px !important;
+}
+.HomeSplide .splide__pagination__page.is-active::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #b88e2f !important;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+.HomeSplide .splide__pagination__page {
+  background-color: #d8d8d8 !important;
+}

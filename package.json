@@ -21,6 +21,7 @@
     "react-input-mask": "^2.0.4",
     "react-router-dom": "^6.23.1",
     "react-splide-ts": "^0.7.14",
+    "redux-devtools-extension": "^2.13.9",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

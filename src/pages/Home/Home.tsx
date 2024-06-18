@@ -38,14 +38,14 @@ const {
   RangeSection,
   CardWrapper,
   Card,
-  SliderWrapper,
-  Slider,
+  // SliderWrapper,
+  // Slider,
   SliderSection,
   ImageWrapper,
   ImageContent,
   ImageText,
-  Dots,
-  Dot,
+  // Dots,
+  // Dot,
   Share,
 } = Components;
 
@@ -78,8 +78,9 @@ export const Home = () => {
           <Button
             padding="20px 64px"
             color={{ primary: "#B88E2F", secondary: "white" }}
-            content="BUY NOW"
-          ></Button>
+          >
+            BUY NOW
+          </Button>
         </div>
       </DiscoverSection>
       <RangeSection>
@@ -133,9 +134,10 @@ export const Home = () => {
           <Button
             padding="12px 74px"
             color={{ primary: "#B88E2F", secondary: "white" }}
-            content="Show More"
             bordered
-          ></Button>
+          >
+            Show More
+          </Button>
         </a>
       </ItemsSection>
       <SliderSection>
@@ -152,45 +154,47 @@ export const Home = () => {
           <Button
             padding="20px 64px"
             color={{ primary: "#B88E2F", secondary: "white" }}
-            content="Explore More"
-          ></Button>
+          >
+            Explore More
+          </Button>
         </div>
-        <SliderWrapper>
-          <Slider>
-            {sliderImages.map((item, i) => (
-              <ImageWrapper
-                position={
-                  sliderPos == i ? "this" : sliderPos > i ? "before" : "after"
-                }
-              >
-                <img src={item.url} alt={item.desc} />
-                <ImageContent
-                  position={
-                    sliderPos == i ? "this" : sliderPos > i ? "before" : "after"
-                  }
-                >
-                  <ImageText>
-                    <Poppins>
-                      {(i + 1).toString().padStart(2, "0") + "-" + item.name}
-                    </Poppins>
-                    <Poppins>{item.desc}</Poppins>
-                  </ImageText>
-                  <button>
-                    <img
-                      src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Home/Vector+1.svg"
-                      alt="Take a Look"
-                    />
-                  </button>
-                </ImageContent>
-              </ImageWrapper>
-            ))}
-          </Slider>
-          <Dots>
-            {sliderImages.map((url, i) => (
-              <Dot selected={i == sliderPos} />
-            ))}
-          </Dots>
-        </SliderWrapper>
+        <Splide
+          className="HomeSplide"
+          onMove={(e, i) => {
+            console.log(i);
+            setSliderPos(i);
+          }}
+          options={{
+            width: "50%",
+            gap: 24,
+            fixedWidth: "300px",
+            type: "loop",
+          }}
+        >
+          {[...sliderImages, ...sliderImages, ...sliderImages].map(
+            (item, i) => (
+              <SplideSlide>
+                <ImageWrapper isFocus={sliderPos == i}>
+                  <img src={item.url} alt={item.desc} />
+                  <ImageContent isFocus={sliderPos == i}>
+                    <ImageText>
+                      <Poppins>
+                        {(i + 1).toString().padStart(2, "0") + "-" + item.name}
+                      </Poppins>
+                      <Poppins>{item.desc}</Poppins>
+                    </ImageText>
+                    <button>
+                      <img
+                        src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Home/Vector+1.svg"
+                        alt="Take a Look"
+                      />
+                    </button>
+                  </ImageContent>
+                </ImageWrapper>
+              </SplideSlide>
+            )
+          )}
+        </Splide>
       </SliderSection>
       <Share>
         <Poppins fontSize={"20px"} fontWeight={"600"} color={"#616161"}>

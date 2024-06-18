@@ -6,13 +6,19 @@ const { Poppins } = Fonts;
 
 interface Props {
   color: { primary: string; secondary: string };
-  content: string;
+  children: string;
   bordered?: boolean;
   borderRadius?: number;
   padding?: string;
 }
 
-const Button = ({ color, content, bordered, borderRadius, padding }: Props) => {
+const Button = ({
+  color,
+  children,
+  bordered,
+  borderRadius,
+  padding,
+}: Props) => {
   return (
     <ButtonStyled
       borderRadius={borderRadius ?? 0}
@@ -24,7 +30,7 @@ const Button = ({ color, content, bordered, borderRadius, padding }: Props) => {
         fontWeight="600"
         color={bordered ? color.primary : color.secondary}
       >
-        {content}
+        {children}
       </Poppins>
     </ButtonStyled>
   );
