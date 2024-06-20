@@ -5,14 +5,11 @@ import Fonts from "../../fonts/fonts";
 import Button from "../../Components/Button/Button";
 import useWindowDimensions from "../../Hooks/WindowDimensions";
 import { FurnitureGalery } from "../../Components/FurnitureGalery/FurnitureGalery";
-import ProductsMock from "../../Mock/Products.mock.json";
 import { IFurnitureCard } from "../../Interfaces/IFurnitureCard";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "react-splide-ts";
 import "react-splide-ts/css";
-
-const mock: IFurnitureCard[] = ProductsMock.products;
+import axios from "axios";
 
 const sliderImages: { url: string; name: string; desc: string }[] = [
   {
@@ -38,14 +35,10 @@ const {
   RangeSection,
   CardWrapper,
   Card,
-  // SliderWrapper,
-  // Slider,
   SliderSection,
   ImageWrapper,
   ImageContent,
   ImageText,
-  // Dots,
-  // Dot,
   Share,
 } = Components;
 
@@ -54,6 +47,23 @@ const { Poppins } = Fonts;
 export const Home = () => {
   const windowSize = useWindowDimensions();
   const [sliderPos, setSliderPos] = useState<number>(0);
+
+  const [data, setData] = useState<IFurnitureCard[]>([]);
+
+  useEffect(() => {
+    axios
+      .get<{ products: IFurnitureCard[] }>(
+        "https://run.mocky.io/v3/ac3ed192-e32e-4bab-8ff8-2729603b02ae"
+      )
+      .then((res) => {
+        console.log(res);
+        setData(res.data.products);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div>
       <Header />
@@ -129,8 +139,8 @@ export const Home = () => {
         <Poppins fontSize={"40px"} fontWeight={"700"} color={"#333333"}>
           Our Products
         </Poppins>
-        <FurnitureGalery data={mock} initialCardLimit={8}></FurnitureGalery>
-        <a href="">
+        <FurnitureGalery data={data} initialCardLimit={8}></FurnitureGalery>
+        <a href="./shop">
           <Button
             padding="12px 74px"
             color={{ primary: "#B88E2F", secondary: "white" }}

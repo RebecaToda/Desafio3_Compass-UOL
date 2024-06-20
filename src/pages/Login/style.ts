@@ -29,6 +29,10 @@ const LoginArea = styled.div`
   gap: 1.5rem;
   padding: 2rem 20%;
   justify-content: center;
+
+  & > p {
+    align-self: center;
+  }
 `;
 
 const InputsWrapper = styled.div`
@@ -70,7 +74,6 @@ const Buttons = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-
   .lineWrapper {
     display: flex;
     align-items: center;

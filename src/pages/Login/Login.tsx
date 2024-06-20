@@ -1,9 +1,20 @@
 import Fonts from "../../fonts/fonts.ts";
-import Footer from "../../Components/Footer/Footer.tsx";
 import Header from "../../Components/Header/Header.tsx";
 import Components from "./style.ts";
-import Button from "../../Components/Button/Button.tsx";
+import * as ButtonComponents from "../../Components/Button/style.ts";
 import { useState } from "react";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  AuthProvider,
+} from "firebase/auth";
+
+import {
+  auth,
+  facebookProvider,
+  googleProvider,
+} from "../../services/firebaseConfig.tsx";
 
 const {
   Main,
@@ -15,10 +26,94 @@ const {
   Buttons,
   SocialIcons,
 } = Components;
+const { ButtonStyled } = ButtonComponents.default;
+
 const { Poppins } = Fonts;
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true);
+  const [formValues, setFormValues] = useState<{
+    email: string;
+    password: string;
+    repeatPassword: string;
+  }>({ email: "", password: "", repeatPassword: "" });
+
+  const [errorMessage, setErrorMessage] = useState<{
+    email: string;
+    password: string;
+  }>({ email: "", password: "" });
+
+  const login = () => {
+    resetErrors();
+    signInWithEmailAndPassword(auth, formValues.email, formValues.password)
+      .then((userCredential) => {
+        console.log("logou");
+      })
+      .catch((error) => {
+        errorHandling(error);
+      });
+  };
+
+  function resetErrors() {
+    setErrorMessage({ email: "", password: "" });
+  }
+
+  function loginWithPopup(provider: AuthProvider) {
+    signInWithPopup(auth, provider)
+      .then((res) => {
+        console.log("deu bom", res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  function errorHandling(error: { code: string }) {
+    resetErrors();
+    if (error.code.includes("auth/invalid-credential")) {
+      setErrorMessage({
+        ...errorMessage,
+        password: "Incorret password",
+      });
+      return;
+    }
+
+    if (error.code.includes("email")) {
+      setErrorMessage({
+        ...errorMessage,
+        email: error.code.replace("auth/", "").replaceAll("-", " "),
+      });
+    }
+
+    if (error.code.includes("password")) {
+      setErrorMessage({
+        ...errorMessage,
+        password:
+          error.code == "auth/weak-password"
+            ? "Your password must have at least 6 characters."
+            : error.code.replace("auth/", "").replace("-", " "),
+      });
+    }
+  }
+
+  const signUp = () => {
+    resetErrors();
+    if (formValues.password != formValues.repeatPassword) {
+      setErrorMessage({
+        ...errorMessage,
+        password: "Both password must be equals.",
+      });
+      return;
+    }
+
+    createUserWithEmailAndPassword(auth, formValues.email, formValues.password)
+      .then((userCredential) => {
+        console.log(userCredential);
+      })
+      .catch((error) => {
+        errorHandling(error);
+      });
+  };
 
   return (
     <Main>
@@ -35,19 +130,56 @@ const Login = () => {
                 <Poppins fontSize={"20px"} fontWeight={"500"}>
                   Email
                 </Poppins>
-                <input type="email" name="email" id="" />
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  value={formValues.email}
+                  onChange={(e) => {
+                    setFormValues({ ...formValues, email: e.target.value });
+                  }}
+                />
+                {errorMessage.email != "" ? (
+                  <Poppins>{errorMessage.email}</Poppins>
+                ) : (
+                  ""
+                )}
               </label>
               <label>
                 <Poppins fontSize={"20px"} fontWeight={"500"}>
                   Password
                 </Poppins>
-                <input type="password" name="password" id="" />
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  value={formValues.password}
+                  onChange={(e) =>
+                    setFormValues({ ...formValues, password: e.target.value })
+                  }
+                />
+                {errorMessage.password != "" ? (
+                  <Poppins>{errorMessage.password}</Poppins>
+                ) : (
+                  ""
+                )}
               </label>
               <ConfirmPasswordLabel isLogin={isLogin}>
                 <Poppins fontSize={"20px"} fontWeight={"500"}>
                   Confirm Password
                 </Poppins>
-                <input type="password" name="password" id="" />
+                <input
+                  type="password"
+                  name="repeatPassword"
+                  id=""
+                  value={formValues.repeatPassword}
+                  onChange={(e) =>
+                    setFormValues({
+                      ...formValues,
+                      repeatPassword: e.target.value,
+                    })
+                  }
+                />
               </ConfirmPasswordLabel>
             </Inputs>
             <Poppins>Forgot Password?</Poppins>
@@ -60,13 +192,15 @@ const Login = () => {
             </Poppins>
           </InputsWrapper>
           <Buttons>
-            <Button
-              color={{ primary: "#B88E2F", secondary: "white" }}
-              padding="1rem 8rem"
+            <ButtonStyled
+              color={{ primary: "#b88e2f", secondary: "white" }}
+              bordered={false}
               borderRadius={4}
+              padding="1rem 8rem"
+              onClick={() => (isLogin ? login() : signUp())}
             >
-              {isLogin ? "Login" : "Sign Up"}
-            </Button>
+              <Poppins color="white">{isLogin ? "Login" : "Sign Up"}</Poppins>
+            </ButtonStyled>
             <div className="lineWrapper">
               <div className="line"></div>
               <Poppins fontSize={"13px"} color={"#757575"}>
@@ -81,10 +215,16 @@ const Login = () => {
               <img
                 src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Social+Icons/facebook_icon.svg"
                 alt="Facebook Icon"
+                onClick={() => {
+                  loginWithPopup(facebookProvider);
+                }}
               />
               <img
-                src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Social+Icons/instagram_icon.svg"
-                alt="Instagram Icon"
+                src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/login/google+icon.svg"
+                alt="Google Icon"
+                onClick={() => {
+                  loginWithPopup(googleProvider);
+                }}
               />
             </SocialIcons>
           </Buttons>
