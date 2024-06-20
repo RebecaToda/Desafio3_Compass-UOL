@@ -41,16 +41,16 @@ export const FurnitureGalery = ({
   );
 
   const titleRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     setPagination(1);
     if (filter.length == 0) {
       setDataState(data);
       return;
     }
-    setDataState(
-      dataState.filter((product) => filter.includes(product.category))
-    );
-  }, [filter]);
+    setDataState(data.filter((product) => filter.includes(product.category)));
+  }, [filter, data]);
+
   useEffect(() => {
     function handleClickOutside(event: any) {
       if (titleRef.current && !titleRef.current.contains(event.target)) {
