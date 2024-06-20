@@ -26,6 +26,7 @@ const CardStyleConfig = styled.div`
   display: flex;
   align-items: center;
   gap: 1.5rem;
+
   .styleConfig {
     display: flex;
     gap: 1.5rem;
@@ -35,6 +36,16 @@ const CardStyleConfig = styled.div`
     gap: 0.25rem;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    .dropdown {
+      position: absolute;
+      top: 0;
+      transform: translateY(30%);
+      padding: 1rem;
+      padding-left: 2rem;
+      z-index: 1;
+      background-color: #f9f1e7;
+    }
   }
   .line {
     height: 2.25rem;

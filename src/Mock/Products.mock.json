@@ -6,7 +6,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -14,7 +15,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -22,7 +24,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -30,7 +33,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -38,7 +42,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -46,7 +51,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -54,7 +60,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -62,7 +69,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -70,7 +78,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -78,7 +87,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -86,7 +96,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -94,7 +105,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -102,7 +114,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -110,7 +123,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -118,7 +132,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -126,7 +141,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -134,7 +150,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -142,7 +159,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -150,7 +168,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -158,7 +177,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -166,7 +186,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -174,7 +195,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -182,7 +204,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -190,7 +213,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -198,7 +222,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -206,7 +231,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -214,7 +240,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -222,7 +249,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -230,7 +258,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -238,7 +267,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -246,7 +276,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -254,7 +285,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -262,7 +294,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -270,7 +303,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -278,7 +312,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -286,7 +321,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -294,7 +330,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -302,7 +339,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -310,7 +348,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -318,7 +357,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -326,7 +366,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -334,7 +375,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -342,7 +384,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -350,7 +393,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -358,7 +402,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -366,7 +411,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -374,7 +420,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -382,7 +429,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -390,7 +438,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -398,7 +447,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -406,7 +456,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -414,7 +465,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -422,7 +474,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -430,7 +483,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -438,7 +492,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -446,7 +501,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -454,7 +510,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -462,7 +519,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -470,7 +528,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -478,7 +537,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -486,7 +546,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -494,7 +555,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -502,7 +564,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -510,7 +573,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -518,7 +582,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -526,7 +591,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -534,7 +600,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -542,7 +609,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -550,7 +618,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -558,7 +627,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -566,7 +636,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -574,7 +645,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -582,7 +654,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -590,7 +663,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -598,7 +672,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -606,7 +681,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -614,7 +690,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -622,7 +699,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -630,7 +708,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -638,7 +717,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -646,7 +726,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -654,7 +735,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -662,7 +744,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -670,7 +753,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -678,7 +762,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -686,7 +771,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -694,7 +780,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -702,7 +789,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -710,7 +798,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -718,7 +807,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -726,7 +816,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -734,7 +825,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -742,7 +834,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -750,7 +843,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -758,7 +852,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -766,7 +861,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -774,7 +870,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -782,7 +879,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -790,7 +888,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -798,7 +897,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -806,7 +906,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -814,7 +915,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -822,7 +924,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -830,7 +933,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -838,7 +942,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -846,7 +951,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -854,7 +960,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -862,7 +969,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -870,7 +978,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -878,7 +987,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -886,7 +996,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -894,7 +1005,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -902,7 +1014,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -910,7 +1023,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -918,7 +1032,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -926,7 +1041,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -934,7 +1050,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -942,7 +1059,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -950,7 +1068,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -958,7 +1077,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -966,7 +1086,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -974,7 +1095,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -982,7 +1104,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -990,7 +1113,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -998,7 +1122,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1006,7 +1131,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -1014,7 +1140,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -1022,7 +1149,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -1030,7 +1158,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1038,7 +1167,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -1046,7 +1176,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -1054,7 +1185,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -1062,7 +1194,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1070,7 +1203,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -1078,7 +1212,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -1086,7 +1221,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -1094,7 +1230,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1102,7 +1239,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -1110,7 +1248,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -1118,7 +1257,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -1126,7 +1266,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1134,7 +1275,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -1142,7 +1284,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -1150,7 +1293,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -1158,7 +1302,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1166,7 +1311,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Lolita",
@@ -1174,7 +1320,8 @@
       "price": 14000000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Sofas"
     },
     {
       "title": "Respira",
@@ -1182,7 +1329,8 @@
       "price": 500000,
       "discount": 50,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": true,
+      "category": "Tables"
     },
     {
       "title": "Syltherine",
@@ -1190,7 +1338,8 @@
       "price": 3500000,
       "discount": 30,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Syltherine.png",
-      "isNew": false
+      "isNew": false,
+      "category": "Chairs"
     },
     {
       "title": "Leviosa",
@@ -1198,23 +1347,8 @@
       "price": 2500000,
       "discount": 0,
       "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Leviosa.png",
-      "isNew": false
-    },
-    {
-      "title": "Lolita",
-      "description": "Luxury big sofa",
-      "price": 14000000,
-      "discount": 50,
-      "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Lolito.png",
-      "isNew": false
-    },
-    {
-      "title": "Respira",
-      "description": "Outdoor bar table and stool",
-      "price": 500000,
-      "discount": 50,
-      "img": "https://imagensdesafio3.s3.us-east-2.amazonaws.com/img/shop/Products/Respira.png",
-      "isNew": true
+      "isNew": false,
+      "category": "Chairs"
     }
   ]
 }

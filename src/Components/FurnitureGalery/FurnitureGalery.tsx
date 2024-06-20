@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IFurnitureCard } from "../../Interfaces/IFurnitureCard";
 import FurnitureCard from "../FurnitureCard/FurnitureCard";
 import Fonts from "../../fonts/fonts.ts";
@@ -32,10 +32,36 @@ export const FurnitureGalery = ({
   const windowSize = useWindowDimensions();
   const [cardLimit, setCardLimit] = useState<number>(initialCardLimit);
   const [pagination, setPagination] = useState<number>(1);
+  const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
+  const [filter, setFilter] = useState<string[]>([]);
+  const [dataState, setDataState] = useState<IFurnitureCard[]>(data);
   // const [sortBy, setSortBy] = useState<"default" | "">("default");
   const [cardStyleType, setCardStyleType] = useState<"vertical" | "horizontal">(
     "vertical"
   );
+
+  const titleRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    setPagination(1);
+    if (filter.length == 0) {
+      setDataState(data);
+      return;
+    }
+    setDataState(
+      dataState.filter((product) => filter.includes(product.category))
+    );
+  }, [filter]);
+  useEffect(() => {
+    function handleClickOutside(event: any) {
+      if (titleRef.current && !titleRef.current.contains(event.target)) {
+        setIsFilterOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [titleRef]);
 
   const changePagination = (pos: number) => {
     setPagination(pos);
@@ -48,7 +74,65 @@ export const FurnitureGalery = ({
         <Filters id="filter">
           <CardStyleConfig>
             <div className="styleConfig">
-              <div className="title">
+              <div
+                ref={titleRef}
+                className="title"
+                onClick={() => setIsFilterOpen(!isFilterOpen)}
+              >
+                {isFilterOpen ? (
+                  <ul className="dropdown">
+                    <li
+                      style={{
+                        listStyleType: filter.includes("Chairs")
+                          ? "disc"
+                          : "circle",
+                      }}
+                      onClick={() => {
+                        setFilter(
+                          filter.includes("Chairs")
+                            ? filter.filter((filt) => filt != "Chairs")
+                            : [...filter, "Chairs"]
+                        );
+                      }}
+                    >
+                      <Poppins>Chairs</Poppins>
+                    </li>
+                    <li
+                      style={{
+                        listStyleType: filter.includes("Sofas")
+                          ? "disc"
+                          : "circle",
+                      }}
+                      onClick={() => {
+                        setFilter(
+                          filter.includes("Sofas")
+                            ? filter.filter((filt) => filt != "Sofas")
+                            : [...filter, "Sofas"]
+                        );
+                      }}
+                    >
+                      <Poppins>Sofas</Poppins>
+                    </li>
+                    <li
+                      style={{
+                        listStyleType: filter.includes("Tables")
+                          ? "disc"
+                          : "circle",
+                      }}
+                      onClick={() => {
+                        setFilter(
+                          filter.includes("Tables")
+                            ? filter.filter((filt) => filt != "Tables")
+                            : [...filter, "Tables"]
+                        );
+                      }}
+                    >
+                      <Poppins>Tables</Poppins>
+                    </li>
+                  </ul>
+                ) : (
+                  ""
+                )}
                 <img
                   src="https://imagensdesafio3.s3.us-east-2.amazonaws.com/svg/Shop/Filter/Filter+Icon.svg"
                   alt="Filter Icon"
@@ -69,10 +153,10 @@ export const FurnitureGalery = ({
             <div className="line"></div>
             <Poppins>
               Showing {cardLimit * (pagination - 1) + 1}-
-              {pagination * cardLimit <= data.length
+              {pagination * cardLimit <= dataState.length
                 ? pagination * cardLimit
-                : data.length}
-              of {data.length} results
+                : dataState.length}
+              &nbsp;of {dataState.length} results
             </Poppins>
           </CardStyleConfig>
           <DescriptionFilter>
@@ -116,12 +200,12 @@ export const FurnitureGalery = ({
         ""
       )}
       <Galery>
-        {data
+        {dataState
           .slice(
             cardLimit * (pagination - 1),
-            pagination * cardLimit <= data.length
+            pagination * cardLimit <= dataState.length
               ? pagination * cardLimit
-              : data.length
+              : dataState.length
           )
           .map((product: IFurnitureCard) => (
             <FurnitureCard
@@ -152,7 +236,7 @@ export const FurnitureGalery = ({
           <Item className="actualPos">
             <Poppins color={"white"}>{pagination}</Poppins>
           </Item>
-          {pagination * cardLimit < data.length ? (
+          {pagination * cardLimit < dataState.length ? (
             <>
               {windowSize.width > 500 ? (
                 <Item onClick={() => changePagination(pagination + 1)}>

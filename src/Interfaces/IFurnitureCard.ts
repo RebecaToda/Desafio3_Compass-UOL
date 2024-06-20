@@ -5,4 +5,5 @@ export interface IFurnitureCard {
   discount: number;
   img: string;
   isNew: boolean;
+  category: string;
 }

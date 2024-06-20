@@ -74,13 +74,6 @@ const Buttons = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  button {
-    background-color: #b88e2f;
-    color: white;
-    padding: 1rem 8rem;
-    border-radius: 4px;
-    border: none;
-  }
   .lineWrapper {
     display: flex;
     align-items: center;
