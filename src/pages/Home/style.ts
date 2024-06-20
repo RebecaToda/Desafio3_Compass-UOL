@@ -77,6 +77,7 @@ const ItemsSection = styled.section`
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  padding-bottom: 30px;
 `;
 
 const SliderSection = styled.section`
