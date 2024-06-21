@@ -126,17 +126,6 @@ const ImageText = styled.div`
   padding: 32px;
 `;
 
-// const Dots = styled.div`
-//   display: flex;
-//   gap: 20px;
-// `;
-// const Dot = styled.div`
-//   background-color: red;
-//   width: 11px;
-//   height: 11px;
-//   padding: 8px;
-// `;
-
 const Share = styled.div`
   display: flex;
   height: 900px;
@@ -156,14 +145,9 @@ const Components = {
   ItemsSection,
   RangeSection,
   SliderSection,
-  // SliderWrapper,
-  // Slider,
   ImageWrapper,
-  Image,
   ImageContent,
   ImageText,
-  // Dots,
-  // Dot,
   Share,
 };
 

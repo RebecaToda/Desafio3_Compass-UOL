@@ -2,7 +2,7 @@ import Fonts from "../../fonts/fonts.ts";
 import Header from "../../Components/Header/Header.tsx";
 import Components from "./style.ts";
 import * as ButtonComponents from "../../Components/Button/style.ts";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -10,11 +10,14 @@ import {
   AuthProvider,
 } from "firebase/auth";
 
+import { useNavigate } from "react-router";
 import {
   auth,
   facebookProvider,
   googleProvider,
-} from "../../services/firebaseConfig.tsx";
+} from "../../services/firebaseConfig.ts";
+
+import { useAuth } from "../../services/AuthContext.tsx";
 
 const {
   Main,
@@ -43,15 +46,25 @@ const Login = () => {
     password: string;
   }>({ email: "", password: "" });
 
+  const navigate = useNavigate();
+
+  const { currentUser } = useAuth();
+
+  useEffect(() => {
+    if (currentUser) {
+      navigate("/shop");
+    }
+  }, [currentUser]);
+
   const login = () => {
     resetErrors();
-    signInWithEmailAndPassword(auth, formValues.email, formValues.password)
-      .then((userCredential) => {
-        console.log("logou");
-      })
-      .catch((error) => {
-        errorHandling(error);
-      });
+    signInWithEmailAndPassword(
+      auth,
+      formValues.email,
+      formValues.password
+    ).catch((error) => {
+      errorHandling(error);
+    });
   };
 
   function resetErrors() {
@@ -59,13 +72,9 @@ const Login = () => {
   }
 
   function loginWithPopup(provider: AuthProvider) {
-    signInWithPopup(auth, provider)
-      .then((res) => {
-        console.log("deu bom", res);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    signInWithPopup(auth, provider).catch((error) => {
+      errorHandling(error);
+    });
   }
 
   function errorHandling(error: { code: string }) {
