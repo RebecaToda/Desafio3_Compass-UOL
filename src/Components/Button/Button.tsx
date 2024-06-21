@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Fonts from "../../fonts/fonts.ts";
 import Components from "./style.ts";
 
@@ -12,7 +13,7 @@ interface Props {
   padding?: string;
 }
 
-const Button = ({
+const Button: FC<Props> = ({
   color,
   children,
   bordered,
