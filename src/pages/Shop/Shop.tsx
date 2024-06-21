@@ -12,7 +12,7 @@ export const Shop = () => {
   useEffect(() => {
     axios
       .get<{ products: IFurnitureCard[] }>(
-        "https://run.mocky.io/v3/ac3ed192-e32e-4bab-8ff8-2729603b02ae"
+        "https://run.mocky.io/v3/14b065da-3092-42e7-8a81-b1f4650f724f"
       )
       .then((res) => {
         console.log(res);
