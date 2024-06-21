@@ -44,6 +44,9 @@ export const FurnitureGalery = ({
 
   useEffect(() => {
     setPagination(1);
+    if (filter.length > 2) {
+      setFilter([]);
+    }
     if (filter.length == 0) {
       setDataState(data);
       return;
