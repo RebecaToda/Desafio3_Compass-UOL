@@ -53,7 +53,7 @@ export const Home = () => {
   useEffect(() => {
     axios
       .get<{ products: IFurnitureCard[] }>(
-        "https://run.mocky.io/v3/ac3ed192-e32e-4bab-8ff8-2729603b02ae"
+        "https://run.mocky.io/v3/14b065da-3092-42e7-8a81-b1f4650f724f"
       )
       .then((res) => {
         console.log(res);
@@ -85,12 +85,14 @@ export const Home = () => {
               tellus, luctus nec ullamcorper mattis.
             </Poppins>
           </div>
-          <Button
-            padding="20px 64px"
-            color={{ primary: "#B88E2F", secondary: "white" }}
-          >
-            BUY NOW
-          </Button>
+          <a href="./shop">
+            <Button
+              padding="20px 64px"
+              color={{ primary: "#B88E2F", secondary: "white" }}
+            >
+              BUY NOW
+            </Button>
+          </a>
         </div>
       </DiscoverSection>
       <RangeSection>

@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const FurnitureCard = ({ data, styleType = "vertical" }: Props) => {
-  const { title, description, price, discount, img, isNew } = data;
+  const { title, subtitle, price, discount, img, isNew } = data;
 
   return (
     <Card styleType={styleType}>
@@ -29,7 +29,7 @@ export const FurnitureCard = ({ data, styleType = "vertical" }: Props) => {
           {title}
         </Poppins>
         <Poppins fontWeight={"500"} color={"#898989"}>
-          {description}
+          {subtitle}
         </Poppins>
         <Prices>
           <Poppins fontSize={"20px"} fontWeight={"600"} color={"#3A3A3A"}>

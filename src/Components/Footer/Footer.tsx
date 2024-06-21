@@ -131,16 +131,16 @@ const Footer = (props: Props) => {
               >
                 Links
               </Poppins>
-              <a href="" className={styles.linksF}>
+              <a href="/home" className={styles.linksF}>
                 <p className={styles.p}>Home</p>
               </a>
-              <a href="" className={styles.linksF}>
+              <a href="/shop" className={styles.linksF}>
                 <p className={styles.p}>Shop</p>
               </a>
               <a href="" className={styles.linksF}>
                 <p className={styles.p}>About</p>
               </a>
-              <a href="" className={styles.linksF}>
+              <a href="/contact" className={styles.linksF}>
                 <p className={styles.p}>Contact</p>
               </a>
             </div>
