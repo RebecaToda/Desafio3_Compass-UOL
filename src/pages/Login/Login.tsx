@@ -73,7 +73,7 @@ const Login = () => {
 
   function loginWithPopup(provider: AuthProvider) {
     signInWithPopup(auth, provider).catch((error) => {
-      console.log(error);
+      errorHandling(error);
     });
   }
 
