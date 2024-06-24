@@ -172,8 +172,7 @@ export const Home = () => {
         </div>
         <Splide
           className="HomeSplide"
-          onMove={(e, i) => {
-            console.log(i);
+          onMove={(_e, i) => {
             setSliderPos(i);
           }}
           options={{
