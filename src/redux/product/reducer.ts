@@ -19,7 +19,7 @@ export const productReducer = (
       return { ...state, product: actions.payload as IFurnitureCard };
     case "REMOVE_ITEM": {
       const id = actions.payload;
-      const newProducts = state.product.filter((el) => el.d !== id);
+      const newProducts = state.product.filter((el) => el !== id);
       return { ...state, product: newProducts };
     }
     default:
